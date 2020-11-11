@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5A3CFC15255C205800E7040A /* NSObject+JJKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFC14255C205800E7040A /* NSObject+JJKVO.m */; };
 		5A3CFC1B255C22BB00E7040A /* NSObject+JJKVOIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFC1A255C22BB00E7040A /* NSObject+JJKVOIMP.m */; };
+		5A3CFC22255C2C9400E7040A /* JJKVOInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3CFC21255C2C9400E7040A /* JJKVOInfoModel.m */; };
 		5ACC59CB25406C5F00C448B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC59CA25406C5F00C448B6 /* AppDelegate.m */; };
 		5ACC59D125406C5F00C448B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ACC59D025406C5F00C448B6 /* ViewController.m */; };
 		5ACC59D425406C5F00C448B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACC59D225406C5F00C448B6 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		5A3CFC14255C205800E7040A /* NSObject+JJKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JJKVO.m"; sourceTree = "<group>"; };
 		5A3CFC19255C22BB00E7040A /* NSObject+JJKVOIMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JJKVOIMP.h"; sourceTree = "<group>"; };
 		5A3CFC1A255C22BB00E7040A /* NSObject+JJKVOIMP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JJKVOIMP.m"; sourceTree = "<group>"; };
+		5A3CFC20255C2C9400E7040A /* JJKVOInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJKVOInfoModel.h; sourceTree = "<group>"; };
+		5A3CFC21255C2C9400E7040A /* JJKVOInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJKVOInfoModel.m; sourceTree = "<group>"; };
 		5ACC59C625406C5F00C448B6 /* KVODemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVODemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACC59C925406C5F00C448B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5ACC59CA25406C5F00C448B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				5A3CFC14255C205800E7040A /* NSObject+JJKVO.m */,
 				5A3CFC19255C22BB00E7040A /* NSObject+JJKVOIMP.h */,
 				5A3CFC1A255C22BB00E7040A /* NSObject+JJKVOIMP.m */,
+				5A3CFC20255C2C9400E7040A /* JJKVOInfoModel.h */,
+				5A3CFC21255C2C9400E7040A /* JJKVOInfoModel.m */,
 			);
 			path = JJKVO;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3CFC22255C2C9400E7040A /* JJKVOInfoModel.m in Sources */,
 				5ACC59D125406C5F00C448B6 /* ViewController.m in Sources */,
 				5ACC5A1225406DF800C448B6 /* SceneDelegate.m in Sources */,
 				5A3CFC15255C205800E7040A /* NSObject+JJKVO.m in Sources */,
