@@ -13,7 +13,7 @@
 
 /// 根据 keyPath 获取 setter 方法名
 - (NSString *)setterNameForKeyPath:(NSString *)keyPath {
-    // setKeyPath / _setKeyPath / setIsKeyPath
+    // setKeyPath: / _setKeyPath: / setIsKeyPath:
     unsigned int count = 0;
     Method *methodList = class_copyMethodList([self class], &count);
     NSArray *possibleSetters = [self possibleSettersForKeyPath:keyPath];
