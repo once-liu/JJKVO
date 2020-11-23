@@ -16,6 +16,8 @@ typedef NS_ENUM(NSUInteger, JJKVOChangeOptions) {
     JJKVOChangeOptionOld = 1 << 1,
 };
 
+typedef NSString *JJKVOChangeKey NS_STRING_ENUM;
+
 @interface NSObject (JJKVO)
 
 - (void)jj_addObserver:(NSObject *)observer

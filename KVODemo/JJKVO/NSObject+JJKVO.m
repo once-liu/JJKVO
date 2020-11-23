@@ -8,6 +8,9 @@
 #import "NSObject+JJKVO.h"
 #import "NSObject+JJKVOIMP.h"
 
+JJKVOChangeKey const JJKVOChangeNewKey = @"New";
+JJKVOChangeKey const JJKVOChangeOldKey = @"Old";
+
 @implementation NSObject (JJKVO)
 
 - (void)jj_addObserver:(NSObject *)observer
