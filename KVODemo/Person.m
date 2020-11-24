@@ -24,6 +24,7 @@
 //    return keyPaths;
 //}
 
+/**
 + (NSSet<NSString *> *)keyPathsForValuesAffectingProgress
 {
     return [NSSet setWithObjects:@"totalBytes", @"completedBytes", nil];
@@ -40,5 +41,6 @@
     
     return [NSString stringWithFormat:@"%d%%", (int)ceil(progress)];
 }
+ */
 
 @end

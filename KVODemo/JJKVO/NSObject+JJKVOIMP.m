@@ -53,7 +53,7 @@ const char *JJKVO_ASSOCIATION_KEY = "JJKVO_ASSOCIATION_KEY";
         return prefix;
     }
     
-    NSRange range = NSMakeRange(prefix.length, setter.length - prefix.length);
+    NSRange range = NSMakeRange(prefix.length, setter.length - prefix.length - 1);
     NSString *keyPath = [setter substringWithRange:range];
     NSString *firstLetter = [[keyPath substringToIndex:1] lowercaseString];
     NSString *tailLetters = [keyPath substringFromIndex:1];
@@ -124,7 +124,7 @@ const char *JJKVO_ASSOCIATION_KEY = "JJKVO_ASSOCIATION_KEY";
     SEL selName = NSSelectorFromString(setterName);
     Method method = class_getInstanceMethod([self class], selName);
     Class cls = NSClassFromString([self KVOClassName]);
-    class_addMethod(cls, selName, (IMP)jj_class, method_getTypeEncoding(method));
+    class_addMethod(cls, selName, (IMP)jj_setter, method_getTypeEncoding(method));
 }
 
 /// 保存观察者信息
@@ -272,7 +272,7 @@ Class jj_class(id self, SEL _cmd) {
     Class cls = object_getClass(self);
     NSString *clsName = NSStringFromClass(cls);
     if ([clsName hasPrefix:JJKVO_CLASS_PREFIX]) {
-        [self removeObserver:nil forKeyPath:nil];
+        [self jj_removeObserver:nil forKeyPath:nil];
         
         objc_setAssociatedObject(self, JJKVO_ASSOCIATION_KEY, nil, OBJC_ASSOCIATION_ASSIGN);
         

@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *name;
 
-@property (nonatomic, assign) unsigned long long totalBytes;
-@property (nonatomic, assign) unsigned long long completedBytes;
-@property (nonatomic, copy) NSString *progress;
+//@property (nonatomic, assign) unsigned long long totalBytes;
+//@property (nonatomic, assign) unsigned long long completedBytes;
+//@property (nonatomic, copy) NSString *progress;
 
 @end
 
